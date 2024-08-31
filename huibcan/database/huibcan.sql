@@ -231,7 +231,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`user_id`, `username`, `password`, `email`) VALUES
-(1, 'mayuri.infospace@gmail.com', 'cd92a26534dba48cd785cdcc0b3e6bd1', 'mayuri.infospace@gmail.com');
+(1, 'PrinceB', 'cd92a26534dba48cd785cdcc0b3e6bd1', 'mbubechem@gmail.com');
 
 --
 -- Indexes for dumped tables
