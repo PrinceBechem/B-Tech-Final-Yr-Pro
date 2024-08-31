@@ -55,6 +55,9 @@
                                 <li><a href="invoice.php">Manage Invoices</a></li>
                             </ul>
                         </li>
+
+                    <li> <a class="has-arrow" href="debts.php" aria-expanded="false"><i class="fa fa-files-o"></i><span class="hide-menu">Debts</span></a>
+                        </li>
                          
                         <?php if(isset($_SESSION['userId']) && $_SESSION['userId']==1) { ?>
                          <li><a href="report.php" href="#" aria-expanded="false"><i class="fa fa-flag"></i><span class="hide-menu">Reports</span></a></li>
