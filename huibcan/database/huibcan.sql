@@ -194,8 +194,8 @@ CREATE TABLE `tbl_client` (
 --
 
 INSERT INTO `tbl_client` (`id`, `name`, `gender`, `mob_no`, `reffering`, `address`, `created_date_time`, `delete_status`) VALUES
-(1, 'Rammolli Kallathil', 'Male', '8090809080', 'Subodh', 'Old Kanakapura Rd, Basavanagudi, Bengaluru, Karnataka 560004', '2022-09-25 05:32:57', 0),
-(2, 'Sachin Rajjan', 'Male', '8070809805', 'Akash', 'Plot No.8, Sahajan Colon, Kolkata', '2022-09-25 07:23:34', 0);
+(1, 'Prince Bechem', 'Male', '651609927', 'prince', 'Buea, Street 8', '2024-08-23 05:32:57', 0),
+(2, 'Prince Naiima', 'Female', '675579064', 'prince', 'Buea, Campaign Street', '2024-08-25 07:23:34', 0);
 
 -- --------------------------------------------------------
 

@@ -5,7 +5,7 @@
 
 <?php include('./constant/connect');
  $user=$_SESSION['userId'];
-$sql = "SELECT order_id, order_date, client_name, client_contact, payment_status,grand_total,paid FROM orders WHERE order_status = 1 AND user_id = '$user'";
+$sql = "SELECT order_id, order_date, client_name, client_contact, payment_status,grand_total,paid,due FROM orders WHERE order_status = 1 AND user_id = '$user'";
 $result = $connect->query($sql);
 
 //echo $sql;exit;
@@ -46,6 +46,7 @@ $result = $connect->query($sql);
                         <th>Contact</th>
                         <th>Total Amount</th>
                          <th>Paid Amount</th>
+                         <th>Balance<th>
                         <th>Payment Status</th>
                                                 <th>Action</th>
                                             </tr>
@@ -63,6 +64,8 @@ foreach ($result as $row) {
                                               <td><?php echo $row['client_contact'] ?></td>
                                                <td><?php  echo $row['grand_total']?></td>
                                                <td><?php  echo $row['paid']?></td>
+                                               <td><?php echo $row['due']?></td>
+                                               <td><?php echo $row['']?></td>
                                             <td><?php  if($row['payment_status']==1)
                                             {
                                                  
@@ -75,7 +78,7 @@ foreach ($result as $row) {
                                             }else {
                                                 $paymentStatus = "<label class='label label-danger'><h4>No Payment</h4></label>";
                                                  echo $paymentStatus;
-                                                } // /els
+                                                } // /else
                                             ?></td>
                                             <td>
             
