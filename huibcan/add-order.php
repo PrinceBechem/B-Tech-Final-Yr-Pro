@@ -239,7 +239,7 @@ if($_GET['o'] == 'add') {
 
                                         <div class="form-group">
                                             <div class="row">
-                                                <label for="vat" class="col-sm-2 control-label gst">GST 18%</label>
+                                                <label for="vat" class="col-sm-2 control-label gst">VAT 19%</label>
                                                 <div class="col-sm-4">
                                                   <input type="text" class="form-control" id="vat" name="gstn" readonly="true" />
                                                   <input type="hidden" class="form-control" id="vatValue" name="vatValue" />
@@ -894,7 +894,7 @@ function subAmount() {
   $("#subTotalValue").val(totalSubAmount);
 
   // vat
-  var vat = (Number($("#subTotal").val())/100) * 18;
+  var vat = 0;//(Number($("#subTotal").val())/100) * 19;  
   vat = vat.toFixed(2);
   $("#vat").val(vat);
   $("#vatValue").val(vat);

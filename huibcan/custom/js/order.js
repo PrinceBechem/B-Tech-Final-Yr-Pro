@@ -12,7 +12,7 @@ $(document).ready(function() {
 		}
 });
 
-	var divRequest = $(".div-request").text();
+	var divRequest = $(".div-request").text();  
 
 	// top nav bar 
 	$("#navOrder").addClass('active');
@@ -576,7 +576,7 @@ function subAmount() {
 	$("#subTotalValue").val(totalSubAmount);
 
 	// vat
-	var vat = (Number($("#subTotal").val())/100) * 18;
+	var vat = 0;//(Number($("#subTotal").val())/100) * 19; 
 	vat = vat.toFixed(2);
 	$("#vat").val(vat);
 	$("#vatValue").val(vat);
